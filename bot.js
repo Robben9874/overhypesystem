@@ -6,8 +6,8 @@ const { Client, Util } = require('discord.js');
 client.on('message', message => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('+moha')){
-if (message.author.id !== '479090634813341696') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.content.startsWith('+robben')){
+if (message.author.id !== '371060496276783104') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -107,7 +107,7 @@ message.channel.send(voted)
 }
 });
 
-const devs = ["479090634813341696"]
+const devs = ["371060496276783104"]
 
 const adminprefix = "-";
 client.on('message', message => {
